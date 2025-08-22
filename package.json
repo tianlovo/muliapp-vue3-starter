@@ -1,6 +1,7 @@
 {
-  "name": "muli-danmaku",
-  "version": "0.0.0",
+  "name": "muliapp-vue3-starter",
+  "version": "1.0.0",
+  "description": "MuliMuli app vue3 starter.",
   "private": true,
   "type": "module",
   "engines": {
