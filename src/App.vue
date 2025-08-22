@@ -1,9 +1,7 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <h1>You did it!</h1>
 </template>
 
-<style scoped lang="scss">
-</style>
+<script setup lang="ts"></script>
+
+<style scoped lang="scss"></style>
