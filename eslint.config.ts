@@ -9,7 +9,10 @@ export default defineConfigWithVueTs(
     files: ['**/*.{ts,mts,tsx,vue}'],
   },
 
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
+  globalIgnores([
+    '**/dist/**', '**/dist-ssr/**', '**/coverage/**',
+    'env.d.ts', '**/logger.ts'
+  ]),
 
   // Vue3 必备规则
   pluginVue.configs['flat/essential'],
@@ -58,6 +61,7 @@ export default defineConfigWithVueTs(
       'no-duplicate-imports': 'error', // 38. 禁止重复导入
       '@typescript-eslint/no-unused-vars': 'error', // 39. 禁止未使用变量
       '@typescript-eslint/explicit-function-return-type': 'off', // 40. 允许省略返回类型
+      'no-console': 'error', // 41. 禁止任何 console.* 调用
     },
   },
 
