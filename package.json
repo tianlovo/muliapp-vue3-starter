@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@unocss/preset-attributify": "^66.4.2",
+    "@vueuse/components": "^13.7.0",
+    "@vueuse/core": "^13.7.0",
     "pinia": "^3.0.3",
     "tslog": "^4.9.3",
     "vue": "^3.5.18"
