@@ -1,5 +1,5 @@
 {
-  "name": "muliapp-vue3-starter",
+  "name": "@xlyo-mulimuli/muliapp-vue3-starter",
   "version": "1.0.0",
   "description": "MuliMuli app vue3 starter.",
   "private": true,
@@ -45,5 +45,8 @@
     "unocss": "^66.4.2",
     "vite": "^7.0.6",
     "vue-tsc": "^3.0.4"
-  }
+  },
+  "author": "tianluoqaq",
+  "license": "EULA",
+  "packageManager": "pnpm@10.13.1"
 }
