@@ -1,3 +1,4 @@
+// src/main.ts
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import App from './App.vue';
@@ -6,7 +7,7 @@ import App from './App.vue';
 import '@unocss/reset/tailwind-compat.css';
 // UnoCSS 生成的原子类（虚拟模块）
 import 'virtual:uno.css';
-// 你自己的 Sass 入口
+// 全局样式入口
 import '@/assets/styles/index.scss';
 
 const app = createApp(App);

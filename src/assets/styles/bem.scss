@@ -1,0 +1,39 @@
+// src/assets/styles/bem.scss
+$ns: 'xlyo'; // 命名空间
+$es: '__'; // element 分隔符
+$ms: '--'; // modifier 分隔符
+
+// block
+@mixin b($block) {
+  .#{$ns}-#{$block} {
+    @content;
+  }
+}
+
+// element（自动追加到父级选择器）
+@mixin e($element) {
+  &#{$es}#{$element} {
+    @content;
+  }
+}
+
+// block modifier
+@mixin bm($block, $modifier) {
+  .#{$ns}-#{$block}#{$ms}#{$modifier} {
+    @content;
+  }
+}
+
+// modifier（自动追加到父级选择器）
+@mixin m($modifier) {
+  &#{$ms}#{$modifier} {
+    @content;
+  }
+}
+
+// element modifier（自动追加到父级选择器）
+@mixin em($element, $modifier) {
+  &#{$es}#{$element}#{$ms}#{$modifier} {
+    @content;
+  }
+}

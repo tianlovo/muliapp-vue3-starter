@@ -8,6 +8,7 @@ import UnoCSS from 'unocss/vite'
 export default defineConfig({
   plugins: [
     vue(),
+    // eslint-disable-next-line new-cap
     UnoCSS(),
   ],
 
@@ -22,7 +23,10 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // 全局变量/工具
-        additionalData: `@use "@/assets/styles/vars.scss" as *;`
+        additionalData: `
+        @use "@/assets/styles/bem.scss" as *;
+        @use "@/assets/styles/vars.scss" as *;
+        `,
       }
     },
     // 开启 CSS 代码分割，开发调试用
